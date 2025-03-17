@@ -280,10 +280,10 @@
               // Data for cities and their markers
               const cityData = {
                 "Karachi": [
-                  [24.8607, 67.0011, "Karachi Marker 1"],
-                  [24.8800, 67.0500, "Karachi Marker 2"],
-                  [24.9000, 67.0200, "Karachi Marker 3"],
-                  [24.8700, 67.0100, "Karachi Marker 4"],
+                  [24.8607, 67.0011, "Indus Hospital & Health Network"],
+                  [24.8800, 67.0500, "Fazale Illahi Hospital"],
+                  [24.9000, 67.0200, "Eastside Healthcare Pvt Ltd"],
+                  [24.8700, 67.0100, "Family Care Hospital"],
                   [24.8900, 67.0300, "Karachi Marker 5"]
                 ],
                 "Hyderabad": [
@@ -320,7 +320,8 @@
               function addMarkers(markers) {
                 markers.forEach(([lat, lng, title]) => {
                   L.marker([lat, lng]).addTo(map)
-                    .bindPopup(`<b>${title}</b><br>Coordinates: ${lat.toFixed(4)}, ${lng.toFixed(4)}`);
+                    .bindPopup(`<b>${title}</b><br><p class="d-inline-block  m-0 p-0">Status:</p> <p class="text-danger d-inline-block m-0 p-0"><b> UnRegisted</p> </br> </br>   <a href=""><u>View More</u></a>`);
+                    // .bindPopup(`<b>${title}</b><br>Coordinates: ${lat.toFixed(4)}, ${lng.toFixed(4)},</br>  <a href=""><u>See More</u></a>`);
                 });
               }
 
@@ -420,14 +421,7 @@
                             <p class="fs-3 mb-0">last year</p>
                           </div>
                         </div>
-                        <div class="col-4">
-                          <div class="d-flex justify-content-end">
-                            <div
-                              class="text-white bg-secondary rounded-circle p-6 d-flex align-items-center justify-content-center">
-                              <i class="ti ti-currency-dollar fs-6"></i>
-                            </div>
-                          </div>
-                        </div>
+                        
                       </div>
                     </div>
                     <div id="earning"></div>
@@ -435,7 +429,7 @@
                 </div>
                 <div class="col-lg-4">
                   <!-- Monthly Earnings -->
-                  <div class="card">
+                  <div class="card bg-success">
                     <div class="card-body">
                       <div class="row alig n-items-start">
                         <div class="col-8">
@@ -450,23 +444,17 @@
                             <p class="fs-3 mb-0">last year</p>
                           </div>
                         </div>
-                        <div class="col-4">
-                          <div class="d-flex justify-content-end">
-                            <div
-                              class="text-white bg-secondary rounded-circle p-6 d-flex align-items-center justify-content-center">
-                              <i class="ti ti-currency-dollar fs-6"></i>
-                            </div>
-                          </div>
-                        </div>
+                        
                       </div>
                     </div>
                     <div id="earning"></div>
                   </div>
                 </div>
+                
                 <div class="col-lg-4">
                   <!-- Monthly Earnings -->
-                  <div class="card">
-                    <div class="card-body">
+                  <div class="card bg-danger">
+                      <div class="card-body">
                       <div class="row alig n-items-start">
                         <div class="col-8">
                           <h5 class="card-title mb-9 fw-semibold"> UnRegistered </h5>
@@ -480,14 +468,7 @@
                             <p class="fs-3 mb-0">last year</p>
                           </div>
                         </div>
-                        <div class="col-4">
-                          <div class="d-flex justify-content-end">
-                            <div
-                              class="text-white bg-secondary rounded-circle p-6 d-flex align-items-center justify-content-center">
-                              <i class="ti ti-currency-dollar fs-6"></i>
-                            </div>
-                          </div>
-                        </div>
+                        
                       </div>
                     </div>
                     <div id="earning"></div>
@@ -495,7 +476,7 @@
                 </div>
                 <div class="col-lg-4">
                   <!-- Monthly Earnings -->
-                  <div class="card">
+                  <div class="card bg-warning">
                     <div class="card-body">
                       <div class="row alig n-items-start">
                         <div class="col-8">
@@ -510,14 +491,7 @@
                             <p class="fs-3 mb-0">last year</p>
                           </div>
                         </div>
-                        <div class="col-4">
-                          <div class="d-flex justify-content-end">
-                            <div
-                              class="text-white bg-secondary rounded-circle p-6 d-flex align-items-center justify-content-center">
-                              <i class="ti ti-currency-dollar fs-6"></i>
-                            </div>
-                          </div>
-                        </div>
+                        
                       </div>
                     </div>
                     <div id="earning"></div>
@@ -540,14 +514,7 @@
                             <p class="fs-3 mb-0">last year</p>
                           </div>
                         </div>
-                        <div class="col-4">
-                          <div class="d-flex justify-content-end">
-                            <div
-                              class="text-white bg-secondary rounded-circle p-6 d-flex align-items-center justify-content-center">
-                              <i class="ti ti-currency-dollar fs-6"></i>
-                            </div>
-                          </div>
-                        </div>
+                        
                       </div>
                     </div>
                     <div id="earning"></div>
@@ -570,14 +537,7 @@
                             <p class="fs-3 mb-0">last year</p>
                           </div>
                         </div>
-                        <div class="col-4">
-                          <div class="d-flex justify-content-end">
-                            <div
-                              class="text-white bg-secondary rounded-circle p-6 d-flex align-items-center justify-content-center">
-                              <i class="ti ti-currency-dollar fs-6"></i>
-                            </div>
-                          </div>
-                        </div>
+                        
                       </div>
                     </div>
                     <div id="earning"></div>
@@ -600,14 +560,7 @@
                             <p class="fs-3 mb-0">last year</p>
                           </div>
                         </div>
-                        <div class="col-4">
-                          <div class="d-flex justify-content-end">
-                            <div
-                              class="text-white bg-secondary rounded-circle p-6 d-flex align-items-center justify-content-center">
-                              <i class="ti ti-currency-dollar fs-6"></i>
-                            </div>
-                          </div>
-                        </div>
+                        
                       </div>
                     </div>
                     <div id="earning"></div>
@@ -630,14 +583,7 @@
                             <p class="fs-3 mb-0">last year</p>
                           </div>
                         </div>
-                        <div class="col-4">
-                          <div class="d-flex justify-content-end">
-                            <div
-                              class="text-white bg-secondary rounded-circle p-6 d-flex align-items-center justify-content-center">
-                              <i class="ti ti-currency-dollar fs-6"></i>
-                            </div>
-                          </div>
-                        </div>
+                        
                       </div>
                     </div>
                     <div id="earning"></div>
@@ -660,14 +606,7 @@
                             <p class="fs-3 mb-0">last year</p>
                           </div>
                         </div>
-                        <div class="col-4">
-                          <div class="d-flex justify-content-end">
-                            <div
-                              class="text-white bg-secondary rounded-circle p-6 d-flex align-items-center justify-content-center">
-                              <i class="ti ti-currency-dollar fs-6"></i>
-                            </div>
-                          </div>
-                        </div>
+                        
                       </div>
                     </div>
                     <div id="earning"></div>
@@ -690,14 +629,7 @@
                             <p class="fs-3 mb-0">last year</p>
                           </div>
                         </div>
-                        <div class="col-4">
-                          <div class="d-flex justify-content-end">
-                            <div
-                              class="text-white bg-secondary rounded-circle p-6 d-flex align-items-center justify-content-center">
-                              <i class="ti ti-currency-dollar fs-6"></i>
-                            </div>
-                          </div>
-                        </div>
+                        
                       </div>
                     </div>
                     <div id="earning"></div>
