@@ -238,7 +238,7 @@
       <div class="body-wrapper-inner">
         <div class="container-fluid">
           <!--  Row 1 -->
-          <div class="row">            
+          <div class="row">
 
             <div class="col-lg-12 d-flex align-items-stretch">
               <div class="card w-100">
@@ -278,50 +278,86 @@
               }).addTo(map);
 
               // Data for cities and their markers
+              // const cityData = {
+              //   "Karachi": [
+              //     [24.8607, 67.0011, "Indus Hospital & Health Network"],
+              //     [24.8800, 67.0500, "Fazale Illahi Hospital"],
+              //     [24.9000, 67.0200, "Eastside Healthcare Pvt Ltd"],
+              //     [24.8700, 67.0100, "Family Care Hospital"],
+              //     [24.8900, 67.0300, "Karachi Marker 5"]
+              //   ],
+              //   "Hyderabad": [
+              //     [25.3792, 68.3683, "Hyderabad Marker 1"],
+              //     [25.3900, 68.3700, "Hyderabad Marker 2"],
+              //     [25.4000, 68.3800, "Hyderabad Marker 3"],
+              //     [25.3700, 68.3600, "Hyderabad Marker 4"],
+              //     [25.3800, 68.3650, "Hyderabad Marker 5"]
+              //   ],
+              //   "Sukkur": [
+              //     [27.7000, 68.8667, "Sukkur Marker 1"],
+              //     [27.7100, 68.8700, "Sukkur Marker 2"],
+              //     [27.7200, 68.8800, "Sukkur Marker 3"],
+              //     [27.6900, 68.8600, "Sukkur Marker 4"],
+              //     [27.7050, 68.8650, "Sukkur Marker 5"]
+              //   ],
+              //   "Larkana": [
+              //     [27.5600, 68.2100, "Larkana Marker 1"],
+              //     [27.5700, 68.2200, "Larkana Marker 2"],
+              //     [27.5800, 68.2300, "Larkana Marker 3"],
+              //     [27.5500, 68.2000, "Larkana Marker 4"],
+              //     [27.5650, 68.2150, "Larkana Marker 5"]
+              //   ],
+              //   "Mirpur Khas": [
+              //     [25.5250, 69.0150, "Mirpur Khas Marker 1"],
+              //     [25.5300, 69.0200, "Mirpur Khas Marker 2"],
+              //     [25.5400, 69.0300, "Mirpur Khas Marker 3"],
+              //     [25.5200, 69.0100, "Mirpur Khas Marker 4"],
+              //     [25.5350, 69.0250, "Mirpur Khas Marker 5"]
+              //   ]
+              // };
               const cityData = {
                 "Karachi": [
                   [24.8607, 67.0011, "Indus Hospital & Health Network"],
                   [24.8800, 67.0500, "Fazale Illahi Hospital"],
                   [24.9000, 67.0200, "Eastside Healthcare Pvt Ltd"],
                   [24.8700, 67.0100, "Family Care Hospital"],
-                  [24.8900, 67.0300, "Karachi Marker 5"]
+                  [24.8900, 67.0300, "Karachi Medical Center"]
                 ],
                 "Hyderabad": [
-                  [25.3792, 68.3683, "Hyderabad Marker 1"],
-                  [25.3900, 68.3700, "Hyderabad Marker 2"],
-                  [25.4000, 68.3800, "Hyderabad Marker 3"],
-                  [25.3700, 68.3600, "Hyderabad Marker 4"],
-                  [25.3800, 68.3650, "Hyderabad Marker 5"]
+                  [25.3792, 68.3683, "Hyderabad Medical Complex"],
+                  [25.3900, 68.3700, "Sindh Institute of Urology and Transplantation"],
+                  [25.4000, 68.3800, "Hyderabad General Hospital"],
+                  [25.3700, 68.3600, "Al-Mustafa Hospital"],
+                  [25.3800, 68.3650, "Sukkur Institute of Medical Sciences"]
                 ],
                 "Sukkur": [
-                  [27.7000, 68.8667, "Sukkur Marker 1"],
-                  [27.7100, 68.8700, "Sukkur Marker 2"],
-                  [27.7200, 68.8800, "Sukkur Marker 3"],
-                  [27.6900, 68.8600, "Sukkur Marker 4"],
-                  [27.7050, 68.8650, "Sukkur Marker 5"]
+                  [27.7000, 68.8667, "Sukkur Medical Center"],
+                  [27.7100, 68.8700, "Ghulam Muhammad Mahar Medical College"],
+                  [27.7200, 68.8800, "Sukkur Institute of Medical Sciences"],
+                  [27.6900, 68.8600, "Civil Hospital Sukkur"],
+                  [27.7050, 68.8650, "Sukkur Heart Hospital"]
                 ],
                 "Larkana": [
-                  [27.5600, 68.2100, "Larkana Marker 1"],
-                  [27.5700, 68.2200, "Larkana Marker 2"],
-                  [27.5800, 68.2300, "Larkana Marker 3"],
-                  [27.5500, 68.2000, "Larkana Marker 4"],
-                  [27.5650, 68.2150, "Larkana Marker 5"]
+                  [27.5600, 68.2100, "Larkana Medical Center"],
+                  [27.5700, 68.2200, "Shaheed Mohtarma Benazir Bhutto Medical University"],
+                  [27.5800, 68.2300, "Larkana General Hospital"],
+                  [27.5500, 68.2000, "Civil Hospital Larkana"],
+                  [27.5650, 68.2150, "Larkana Eye Hospital"]
                 ],
                 "Mirpur Khas": [
-                  [25.5250, 69.0150, "Mirpur Khas Marker 1"],
-                  [25.5300, 69.0200, "Mirpur Khas Marker 2"],
-                  [25.5400, 69.0300, "Mirpur Khas Marker 3"],
-                  [25.5200, 69.0100, "Mirpur Khas Marker 4"],
-                  [25.5350, 69.0250, "Mirpur Khas Marker 5"]
+                  [25.5250, 69.0150, "Mirpur Khas Medical Center"],
+                  [25.5300, 69.0200, "Mirpur Khas General Hospital"],
+                  [25.5400, 69.0300, "Al-Shifa Hospital Mirpur Khas"],
+                  [25.5200, 69.0100, "Civil Hospital Mirpur Khas"],
+                  [25.5350, 69.0250, "Mirpur Khas Maternity Hospital"]
                 ]
               };
-
               // Function to add markers to the map
               function addMarkers(markers) {
                 markers.forEach(([lat, lng, title]) => {
                   L.marker([lat, lng]).addTo(map)
-                    .bindPopup(`<b>${title}</b><br><p class="d-inline-block  m-0 p-0">Status:</p> <p class="text-danger d-inline-block m-0 p-0"><b> UnRegisted</p> </br> </br>   <a href=""><u>View More</u></a>`);
-                    // .bindPopup(`<b>${title}</b><br>Coordinates: ${lat.toFixed(4)}, ${lng.toFixed(4)},</br>  <a href=""><u>See More</u></a>`);
+                    .bindPopup(`<b>${title}</b><br><p class="d-inline-block  m-0 p-0">Status:</p> <p class="text-danger d-inline-block m-0 p-0"><b> UnRegistered</p> </br> </br>   <a href=""><u>View More</u></a>`);
+                  // .bindPopup(`<b>${title}</b><br>Coordinates: ${lat.toFixed(4)}, ${lng.toFixed(4)},</br>  <a href=""><u>See More</u></a>`);
                 });
               }
 
@@ -421,7 +457,7 @@
                             <p class="fs-3 mb-0">last year</p>
                           </div>
                         </div>
-                        
+
                       </div>
                     </div>
                     <div id="earning"></div>
@@ -444,17 +480,17 @@
                             <p class="fs-3 mb-0">last year</p>
                           </div>
                         </div>
-                        
+
                       </div>
                     </div>
                     <div id="earning"></div>
                   </div>
                 </div>
-                
+
                 <div class="col-lg-4">
                   <!-- Monthly Earnings -->
                   <div class="card bg-danger">
-                      <div class="card-body">
+                    <div class="card-body">
                       <div class="row alig n-items-start">
                         <div class="col-8">
                           <h5 class="card-title mb-9 fw-semibold"> UnRegistered </h5>
@@ -468,7 +504,7 @@
                             <p class="fs-3 mb-0">last year</p>
                           </div>
                         </div>
-                        
+
                       </div>
                     </div>
                     <div id="earning"></div>
@@ -480,7 +516,7 @@
                     <div class="card-body">
                       <div class="row alig n-items-start">
                         <div class="col-8">
-                          <h5 class="card-title mb-9 fw-semibold"> Licensed  </h5>
+                          <h5 class="card-title mb-9 fw-semibold"> Licensed </h5>
                           <h4 class="fw-semibold mb-3">6,820</h4>
                           <div class="d-flex align-items-center pb-1">
                             <span
@@ -491,7 +527,7 @@
                             <p class="fs-3 mb-0">last year</p>
                           </div>
                         </div>
-                        
+
                       </div>
                     </div>
                     <div id="earning"></div>
@@ -514,7 +550,7 @@
                             <p class="fs-3 mb-0">last year</p>
                           </div>
                         </div>
-                        
+
                       </div>
                     </div>
                     <div id="earning"></div>
@@ -537,7 +573,7 @@
                             <p class="fs-3 mb-0">last year</p>
                           </div>
                         </div>
-                        
+
                       </div>
                     </div>
                     <div id="earning"></div>
@@ -560,7 +596,7 @@
                             <p class="fs-3 mb-0">last year</p>
                           </div>
                         </div>
-                        
+
                       </div>
                     </div>
                     <div id="earning"></div>
@@ -583,7 +619,7 @@
                             <p class="fs-3 mb-0">last year</p>
                           </div>
                         </div>
-                        
+
                       </div>
                     </div>
                     <div id="earning"></div>
@@ -606,7 +642,7 @@
                             <p class="fs-3 mb-0">last year</p>
                           </div>
                         </div>
-                        
+
                       </div>
                     </div>
                     <div id="earning"></div>
@@ -629,7 +665,7 @@
                             <p class="fs-3 mb-0">last year</p>
                           </div>
                         </div>
-                        
+
                       </div>
                     </div>
                     <div id="earning"></div>
@@ -637,7 +673,7 @@
                 </div>
               </div>
             </div>
-            
+
           </div>
 
           <div class="py-6 px-6 text-center">
